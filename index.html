@@ -5,15 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <title>HTML & JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Lista de compras</title>
 </head>
 <body>
-    <form id="form-number">
-        <input type="number" placeholder="Numero A" name="a" id="a" required>
-        <input type="number" placeholder="Numero B" name="b" id="b" required>
-        <button type="submit" value="enviar">Enviar</button>
-    </form>
-    <p id="resultado"></p>
+    <div class="container">
+        <section>
+            <form id="formulario">
+                <input id="tarefa" type="text" required placeholder="Nome da tarefa">
+                <button id="submit" type="submit">Adicionar</button>
+            </form>
+            <ul id="lista">
+            </ul>
+        </section>
+    </div>
 </body>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
 </html>
-<script src="index.js"></script>
