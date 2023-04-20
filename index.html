@@ -8,20 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Lista de compras</title>
+    <title>Formulario com validação</title>
 </head>
 <body>
-    <div class="container">
-        <section>
+    <header>
+        <h1>Formulario com validação</h1>
+    </header>
+    <section>
+        <div class="container">
             <form id="formulario">
-                <input id="tarefa" type="text" required placeholder="Nome da tarefa">
-                <button id="submit" type="submit">Adicionar</button>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" required>
+                <label for="CPF">CPF</label>
+                <input type="text" id="cpf" required>
+                <label for="endereco">Endereço completo</label>
+                <input type="text" id="endereco" required>
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" required>
+                <button type="submit">Enviar</button>
             </form>
-            <ul id="lista">
-            </ul>
-        </section>
-    </div>
+        </div>
+    </section>
 </body>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="plugins/jquery.mask.min.js"></script>
+<script src="main.js"></script>
 </html>

@@ -1,22 +1,20 @@
 $(document).ready(function(){
 
-    const formulario = $("#formulario");
-    
+    const formulario = $("#formulario")
+
+    const cpf = $('#cpf')
+    const cep = $('#cep')
+
+    cpf.mask('000.000.000-50', {
+        placeholder: "___.___.___-__"
+    })
+    cep.mask('00000-000', {
+        placeholder: "_____-___"
+    })
+
     formulario.submit(function(e){
         e.preventDefault()
 
-        const campo = $('#tarefa')
-        adicinarConteudo(campo.val())
-        campo.val("")
-    })
-
-    $("#lista").on('click', 'li', function () {
-        $(this).attr("style", "text-decoration: line-through;")
+        console.log('funcionou')
     })
 })
-
-function adicinarConteudo(campo){
-    let lista = $('#lista')
-    let item = "<li class='item'>"+campo+"</li>"
-    lista.append(item)
-}
