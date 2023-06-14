@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass main.scss main.css",
+    "less": "lessc ./src/styles/main.less ./build/styles/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.1.3"
+  }
 }
